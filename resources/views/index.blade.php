@@ -233,7 +233,7 @@
 									<h3>Cerimônia + Festa</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>19:30</span>
+										<span>19:45</span>
 										<span>Dai - Cucina & Bar</span>
 									</div>
 									<div class="event-col">
@@ -264,19 +264,27 @@
 					<div class="col-md-12 animate-box">
 						<div class="wrap-testimony">
 							<div class="owl-carousel-fullwidth">
-								@foreach ($recados as $recado)
+								@forelse ($recados as $recado)
 									<div class="item">
 										<div class="testimony-slide active text-center">
-											<figure>
-												<img src="{{ secure_asset('storage/' . $recado->foto) }}" alt="{{ $recado->autor }}">
-											</figure>
+											{{--<figure>
+												<img src="{{ asset('storage/' . $recado->foto) }}" alt="{{ $recado->autor }}">
+											</figure>--}}
 											<span>{{ $recado->autor }}, {{ $recado->relacao }}</span>
 											<blockquote>
 												<p>"{{ $recado->recado }}"</p>
 											</blockquote>
 										</div>
 									</div>
-								@endforeach
+								@empty
+										<div class="item">
+											<div class="testimony-slide active text-center">
+												<blockquote>
+													<p>Ainda não temos nenhuma mensagem :( </p><p>Seja o primeiro!</p>
+												</blockquote>
+											</div>
+										</div>
+								@endforelse
 								<div class="item">
 									<div class="testimony-slide active text-center">
 										<blockquote>
@@ -285,9 +293,13 @@
 									</div>
 								</div>
 							</div>
-							
-							<p><a href="" class="btn btn-default btn-sm" style="display: block;width: 250px;margin: 0 auto;background: #F14E95;color: #FFFFFF;">Enviar um Recadinho</a></p>
-							
+
+							<p>
+								<a id="btn-recado" class="btn btn-default btn-sm" style="display: block;width: 250px;margin: 0 auto;background: #F14E95;color: #FFFFFF;">
+									Enviar um Recadinho
+								</a>
+							</p>
+
 						</div>
 					</div>
 				</div>
@@ -313,7 +325,42 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+
+	<div class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<form method="POST" action="{{ url('/recado') }}">
+						{{ csrf_field() }}
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label for="autor">Nome</label>
+								<input type="text" id="autor" name="autor" class="form-control" placeholder="Seu nome é.....">
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label for="relacao">Relação</label>
+								<input type="text" id="relacao" name="relacao" class="form-control" placeholder="Você é nosso..... (ex.: amigo(a), primo(a), tio(a) e etc)">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label for="mensagem">Mensagem</label>
+								<textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control" placeholder="Deixe-nos uma mensagem ou alguma história conosco..."></textarea>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="btn-enviar" class="btn btn-primary">Enviar :D</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar :(</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- jQuery -->
 	<script src="theme/js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -339,7 +386,7 @@
 	<script src="theme/js/main.js"></script>
 
 	<script>
-    var d = new Date('2019-06-24 19:30:00');
+    var d = new Date('2019-06-24 19:45:00');
 
     // default example
     simplyCountdown('.simply-countdown-one', {
@@ -362,6 +409,14 @@
         day: d.getDate(),
         enableUtc: false
     });
+
+    $('#btn-recado').click(function () {
+		$('.modal').modal();
+	});
+
+    $('#btn-enviar').click(function () {
+		$('form').submit();
+	});
 </script>
 
 	</body>

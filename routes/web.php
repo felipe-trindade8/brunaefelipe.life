@@ -11,7 +11,9 @@
 |
 */
 
-Route::resource('/', 'IndexController');
+Route::get('/', 'IndexController@index');
+Route::post('/recado', 'IndexController@recado');
+Route::get('/enviado', 'IndexController@enviado');
 
 
 Route::group(['prefix' => 'admin'], function () {
