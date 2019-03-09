@@ -162,7 +162,7 @@
 							</div>
 						</li>
 						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(theme/images/couple-3.jpg);"></div>
+							<div class="timeline-badge" style="background-image:url(theme/images/felipe_3_14.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Corinthiano desde criança</h3>
@@ -174,7 +174,7 @@
 							</div>
 						</li>
 						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(theme/images/couple-3.jpg);"></div>
+							<div class="timeline-badge" style="background-image:url(theme/images/formados.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">A primeira impressão</h3>
@@ -186,7 +186,7 @@
 							</div>
 						</li>
 						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(theme/images/couple-3.jpg);"></div>
+							<div class="timeline-badge" style="background-image:url(theme/images/namoro.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">A amizade que virou casamento</h3>
@@ -198,11 +198,11 @@
 							</div>
 						</li>
 						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(theme/images/couple-3.jpg);"></div>
+							<div class="timeline-badge" style="background-image:url(theme/images/noivado.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">O pedido</h3>
-									<span class="date">24 de Dezembro de 2018</span>
+									<span class="date">24 de Dezembro de 2017</span>
 								</div>
 								<div class="timeline-body">
 									<p>Para compensar, o pedido de noivado foi em grande estilo: na areia da praia, nosso lugar favorito.</p>
