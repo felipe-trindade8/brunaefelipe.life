@@ -167,7 +167,6 @@
                         <p class="modal-produto-descricao"></p>
                         <span class="modal-produto-valor"></span>
                     </div>
-                    <div class="clearfix"></div>
                     <div class="col-md-7 form-pagamento">
                         <form method="POST" action="{{ url('/pagamento') }}">
                             {{ csrf_field() }}
