@@ -241,6 +241,7 @@
 										<span>Segunda 24</span>
 										<span>Junho, 2019</span>
 									</div>
+                                    <div class="clearfix"></div>
 									<p>Em 24 de Junho de 2011, nossa história começou, e exatamente 8 anos depois ela ganhará um novo capítulo. Então reserve essa data em seu calendário para que possamos juntos celebrar a nossa união.</p>
 									<p><a target="_blank" href="https://www.google.com/maps/dir//Dai+-+Cucina+%26+Bar+-+Av+alberto+andal%C3%B3,+3209+-+Centro,+S%C3%A3o+Jos%C3%A9+do+Rio+Preto+-+SP,+15015-000/@-20.817675,-49.3859475,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94bdad5922d0c2c1:0x5d734b21cc4d777e!2m2!1d-49.379412!2d-20.815426!3e0" class="btn btn-default btn-sm">Como chegar</a></p>
 								</div>
