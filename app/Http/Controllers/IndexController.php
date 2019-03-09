@@ -21,7 +21,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $recados = Recado::ativos();
+        $recados = Recado::ativos()->orderBy('created_at', 'desc');
         return view('index', ['recados' => $recados->get()]);
     }
 
