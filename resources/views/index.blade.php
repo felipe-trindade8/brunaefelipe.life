@@ -138,14 +138,14 @@
 							</div>
 						</li>
 						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(theme/images/couple-2.jpg);"></div>
+							<div class="timeline-badge" style="background-image:url(theme/images/felipe_bebe.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Nascimento do Felipe</h3>
 									<span class="date">15 de Julho de 1994</span>
 								</div>
 								<div class="timeline-body">
-									<p>O noivo teve que esperar mais uns dias para nascer, já que seu pai tinha um jogo de futebol importante no dia marcado pelo médido.</p>
+									<p>O noivo não nasceu no dia 13 como programado inicialmente, já que o papai tinha um jogo de futebol importante no dia. Ele teve que esperar por 2 dias para nascer.</p>
 								</div>
 							</div>
 						</li>
