@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 
-class Teste extends Model
+class Presente extends Model
 {
     
 }

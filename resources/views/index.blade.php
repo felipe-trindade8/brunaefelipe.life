@@ -46,13 +46,13 @@
 		<div class="container">
 			<div class="row top">
 				<div class="col-xs-3">
-					<div id="fh5co-logo"><a href="index.html">Bru <i class="icon-heart2" style="font-size: 26px;"></i> Fe</a></div>
+					<div id="fh5co-logo"><a href="/">Bru*Fe</a></div>
 				</div>
 				<div class="col-xs-9 text-right menu-1">
 					<ul>
 						<li class="active"><a href="#top">Início</a></li>
 						<li><a href="/lista-presenca">Confirmação de presença</a></li>
-						<li><a href="/lista-loja">Lista de presentes</a></li>
+						<li><a href="/lista-presentes">Lista de presentes</a></li>
 					</ul>
 				</div>
 			</div>
@@ -67,7 +67,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Bruna &amp; Felipe</h1>
+							<h1>[Bruna_Felipe]</h1>
 							<h2>Vamos nos casar!</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
 							<p><a href="/lista-presenca" class="btn btn-default btn-sm">Confirme sua presença!</a></p>
@@ -94,7 +94,7 @@
 					<div class="desc-groom">
 						<h3>Bruna</h3>
 						<p>
-							Publicitária, noveleira e adooooooora tirar fotos do céu! Curte filmes românticos e sempre chora no final. Tem um repertório gigantesco de frases "fofinhas". Seu ponto fraco: matemática.
+							Publicitária, noveleira e adoooora tirar fotos do céu! Curte filmes românticos e sempre chora no final. Tem um repertório gigantesco de frases "fofinhas". Seu ponto fraco: matemática.
 						</p>
 					</div>
 				</div>
@@ -267,9 +267,9 @@
 								@forelse ($recados as $recado)
 									<div class="item">
 										<div class="testimony-slide active text-center">
-											{{--<figure>
+											<figure>
 												<img src="{{ asset('storage/' . $recado->foto) }}" alt="{{ $recado->autor }}">
-											</figure>--}}
+											</figure>
 											<span>{{ $recado->autor }}, {{ $recado->relacao }}</span>
 											<blockquote>
 												<p>"{{ $recado->recado }}"</p>
@@ -335,20 +335,20 @@
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="autor">Nome</label>
-								<input type="text" id="autor" name="autor" class="form-control" placeholder="Seu nome é.....">
+								<input type="text" id="autor" name="autor" required="required" class="form-control" placeholder="Seu nome é.....">
 							</div>
 						</div>
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="relacao">Relação</label>
-								<input type="text" id="relacao" name="relacao" class="form-control" placeholder="Você é nosso..... (ex.: amigo(a), primo(a), tio(a) e etc)">
+								<input type="text" id="relacao" name="relacao" required="required" class="form-control" placeholder="Você é nosso..... (ex.: amigo(a), primo(a), tio(a) e etc)">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="mensagem">Mensagem</label>
-								<textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control" placeholder="Deixe-nos uma mensagem ou alguma história conosco..."></textarea>
+								<textarea name="mensagem" id="mensagem" required="required" cols="30" rows="10" class="form-control" placeholder="Deixe-nos uma mensagem ou alguma história conosco..."></textarea>
 							</div>
 						</div>
 					</form>
