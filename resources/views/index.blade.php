@@ -165,11 +165,11 @@
 							<div class="timeline-badge" style="background-image:url(theme/images/couple-3.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Teste</h3>
+									<h3 class="timeline-title">Futebol, videogame e artes</h3>
 									<span class="date">Dos 3 aos 14 anos</span>
 								</div>
 								<div class="timeline-body">
-									<p>Futebol e video game eram seu passatempo. Quando não, estava aprontando alguma. As principais travessuras: fazer xixi na fruteira e tomar banho de óleo antes da festa de aniversário. Seu lugar favorito? Atrás do sofá ( ͡° ͜ʖ ͡°).</p>
+									<p>Futebol e videogame eram seu passatempo. Quando não, estava aprontando alguma. As principais travessuras: fazer xixi na fruteira e tomar banho de óleo antes de uma festa de aniversário.</p>
 								</div>
 							</div>
 						</li>
