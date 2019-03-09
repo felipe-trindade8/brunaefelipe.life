@@ -169,7 +169,7 @@
 									<span class="date">Dos 3 aos 14 anos</span>
 								</div>
 								<div class="timeline-body">
-									<p>Futebol e video game eram seu passatempo. Quando não, estava aprontando alguma. As principais: fazer xixi na fruteira e tomar banho de óleo antes da festa de aniversário. Seu lugar favorito? Atrás do sofá ( ͡° ͜ʖ ͡°).</p>
+									<p>Futebol e video game eram seu passatempo. Quando não, estava aprontando alguma. As principais travessuras: fazer xixi na fruteira e tomar banho de óleo antes da festa de aniversário. Seu lugar favorito? Atrás do sofá ( ͡° ͜ʖ ͡°).</p>
 								</div>
 							</div>
 						</li>
