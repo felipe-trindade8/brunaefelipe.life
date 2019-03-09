@@ -1935,3 +1935,8 @@ form label {
 .lista-produto {
   background-size: initial !important;
 }
+
+.img-pagseguro {
+  width: 100%;
+  max-width: 550px;
+}
