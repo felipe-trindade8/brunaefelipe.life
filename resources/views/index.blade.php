@@ -232,6 +232,9 @@
 							<div class="col-md-8 col-sm-8 text-center" style="float: none; margin: 0 auto;">
 								<div class="event-wrap animate-box">
 									<h3>Cerimônia + Festa</h3>
+									<div class="col-md-12 div-dai">
+										<img class="img-dai" src="theme/images/dai-cucina-bar.jpg">
+									</div>
 									<div class="event-col">
 										<i class="icon-clock"></i>
 										<span>19:45</span>
