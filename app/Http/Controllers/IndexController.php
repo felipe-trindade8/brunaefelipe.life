@@ -33,7 +33,7 @@ class IndexController extends Controller
         $recado->recado = $request->mensagem;
         $recado = $recado->save();
 
-        if ($recado) $retorno = "Logo mais seu recado aparecerá em nosso site. Muito obrigado, você é muito importante para nós!";
+        if ($recado) $retorno = "Logo mais seu recado aparecerá em nosso site. Muito obrigado, sua mensagem é muito importante para nós!";
         else $retorno = "Infelizmente algo deu errado! Entre em contato conosco via telefone (17) 9 8174-5101 ou (17) 9 8158-3922 e conte-nos o que aconteceu";
         return redirect('enviado')->with('retorno', $retorno);
     }
