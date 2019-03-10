@@ -145,7 +145,7 @@
 									<span class="date">15 de Julho de 1994</span>
 								</div>
 								<div class="timeline-body">
-									<p>O noivo não nasceu no dia 13 como programado inicialmente, já que o papai tinha um jogo de futebol importante no dia. Ele teve que esperar por 2 dias para vir ao mundo.</p>
+									<p>O noivo não nasceu no dia 13 como programado, já que o papai tinha um jogo de futebol importante no dia. Ele teve que esperar por 2 dias para vir ao mundo.</p>
 								</div>
 							</div>
 						</li>
