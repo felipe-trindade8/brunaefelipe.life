@@ -157,7 +157,7 @@
 									<span class="date">Dos 3 aos 14 anos</span>
 								</div>
 								<div class="timeline-body">
-									<p>Ao contrário de suas primas, preferia jogar bola na rua à brincar de bonecas. Joelho ralado era uma marca constante nessa fase. Mamãe adorava quando chegava com os pés pretos em casa #sqn.</p>
+									<p>Ao contrário de suas primas, preferia jogar bola na rua a brincar de bonecas. Joelho ralado era uma marca constante nessa fase. Mamãe adorava quando chegava com os pés pretos em casa #sqn.</p>
 								</div>
 							</div>
 						</li>
