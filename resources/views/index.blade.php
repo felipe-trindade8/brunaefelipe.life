@@ -10,8 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="favicon.ico" />
 
-	{{--<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>--}}
-	{{--<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">--}}
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="theme/css/animate.css">
@@ -95,7 +94,7 @@
 					<div class="desc-groom">
 						<h3>Bruna</h3>
 						<p>
-							Publicitária, noveleira e adoooora tirar fotos do céu! Curte filmes românticos e sempre chora no final. Tem um repertório gigantesco de frases "fofinhas". Seu ponto fraco: matemática.
+							Publicitária, noveleira e adoooora tirar fotos do céu! Curte filmes românticos e sempre chora no final. Tem um repertório gigantesco de frases "fofinhas".
 						</p>
 					</div>
 				</div>
@@ -107,7 +106,7 @@
 					<div class="desc-bride">
 						<h3>Felipe</h3>
 						<p>
-							Programador, fanático pelo Corinthians e por futebol. Cheddar e bacon não podem faltar no seu cardápio. É apaixonado por motos, porém NÍNGUEM deixa ele ter uma novamente (mas também neh?!). Adora séries (Séria A do Brasileirão ¬¬).
+							Programador, fanático pelo Corinthians e por futebol. Cheddar e bacon não podem faltar no seu cardápio. É apaixonado por motos, porém NÍNGUEM deixa ele ter uma novamente (mas também neh?!).
 						</p>
 					</div>
 				</div>
@@ -127,7 +126,7 @@
 				<div class="col-md-12 col-md-offset-0">
 					<ul class="timeline animate-box">
 						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(theme/images/couple-1.jpg);"></div>
+							<div class="timeline-badge" style="background-image:url(theme/images/bruna_bebe.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Nascimento da Bruna</h3>
@@ -146,12 +145,12 @@
 									<span class="date">15 de Julho de 1994</span>
 								</div>
 								<div class="timeline-body">
-									<p>O noivo não nasceu no dia 13 como programado inicialmente, já que o papai tinha um jogo de futebol importante no dia. Ele teve que esperar por 2 dias para nascer.</p>
+									<p>O noivo não nasceu no dia 13 como programado inicialmente, já que o papai tinha um jogo de futebol importante no dia. Ele teve que esperar por 2 dias para vir ao mundo.</p>
 								</div>
 							</div>
 						</li>
 						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(theme/images/couple-3.jpg);"></div>
+							<div class="timeline-badge" style="background-image:url(theme/images/bruna_3_14.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Moleca na Infância</h3>
@@ -190,7 +189,7 @@
 							<div class="timeline-badge" style="background-image:url(theme/images/namoro.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">A amizade que virou casamento</h3>
+									<h3 class="timeline-title">A amizade que virou namoro</h3>
 									<span class="date">24 de Junho de 2011</span>
 								</div>
 								<div class="timeline-body">
@@ -231,7 +230,7 @@
 						<div class="col-md-10 col-md-offset-1">
 							<div class="col-md-8 col-sm-8 text-center" style="float: none; margin: 0 auto;">
 								<div class="event-wrap animate-box">
-									<h3>Cerimônia + Festa</h3>
+									<h3>Cerimônia + Jantar</h3>
 									<div class="col-md-12 div-dai">
 										<img class="img-dai" src="theme/images/dai-cucina-bar.jpg">
 									</div>
