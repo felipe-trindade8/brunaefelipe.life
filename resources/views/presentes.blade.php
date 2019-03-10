@@ -126,9 +126,6 @@
                                                     data-produto-valor="{{ $produto->valor }}"
                                                     data-produto-imagem="{{ asset('storage/' . $produto->imagem) }}"
                                                     data-produto-status="{{ $produto->status }}">
-                                    @if ($produto->status == 2)
-                                        <div class="comprado">Comprado</div>
-                                    @endif
                                     <div class="case-studies-summary">
                                         <p class="produto-nome">{{ $produto->nome }}</p>
                                         <span class="produto-valor">{{ $produto->valor }}</span>
