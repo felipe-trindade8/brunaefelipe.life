@@ -119,7 +119,7 @@
                 <div class="col-md-12">
                     <ul id="fh5co-gallery-list">
                         @foreach ($produtos as $produto)
-                            <li class="one-forth animate-box lista-produto" data-animate-effect="fadeIn" style="background-image: url({{ asset('storage/' . $produto->imagem) }}); ">
+                            <li class="one-fifth animate-box lista-produto" data-animate-effect="fadeIn" style="background-image: url({{ asset('storage/' . $produto->imagem) }}); ">
                                 <a class="produto"  data-produto-id="{{ $produto->id }}"
                                                     data-produto-nome="{{ $produto->nome }}"
                                                     data-produto-descricao="{{ $produto->descricao }}"
