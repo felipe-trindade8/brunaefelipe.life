@@ -298,6 +298,17 @@
         $('#form-filter').submit();
     });
 
+    $('.js-descer').on('click', function (event) {
+
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $('.fh5co-heading').offset().top
+        }, 1000, 'easeInOutExpo');
+
+        return false;
+    });
+
 </script>
 
 </body>
