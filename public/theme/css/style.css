@@ -1963,6 +1963,7 @@ form label {
   width: 60px;
   height: 60px;
   font-size: 30px;
+  line-height: 63px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
