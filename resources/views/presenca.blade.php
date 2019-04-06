@@ -190,19 +190,16 @@
         enableUtc: false
     });
 
-    var descer = function() {
+    $('.js-descer').on('click', function(event){
 
-        $('.js-descer').on('click', function(event){
+        event.preventDefault();
 
-            event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $('.fh5co-heading').offset().top
+        }, 1000, 'easeInOutExpo');
 
-            $('html, body').animate({
-                scrollTop: $('.fh5co-heading').offset().top
-            }, 1000, 'easeInOutExpo');
-
-            return false;
-        });
-    };
+        return false;
+    });
 
 </script>
 
