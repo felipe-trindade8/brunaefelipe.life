@@ -70,6 +70,11 @@
                         <div class="display-tc animate-box" data-animate-effect="fadeIn">
                             <h1>Lista de presentes</h1>
                             <div class="simply-countdown simply-countdown-one"></div>
+                            <div class="js-descer" style="">
+                                <a href="#" class="js-descer">
+                                    <i class="icon-arrow-down" style="color: #FFF !important;"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
