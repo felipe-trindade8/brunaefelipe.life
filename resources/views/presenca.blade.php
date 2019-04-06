@@ -71,6 +71,9 @@
                             <h1>Confirme sua presença</h1>
                             <h2>Ela é muito importante para nós.</h2>
                             <div class="simply-countdown simply-countdown-one"></div>
+                            <div class="js-descer">
+                                <a href="#" class="js-descer"><i class="icon-arrow-down"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,6 +189,21 @@
         day: d.getDate(),
         enableUtc: false
     });
+
+    var descer = function() {
+
+        $('.js-descer').on('click', function(event){
+
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $('.fh5co-heading').offset().top
+            }, 1000, 'easeInOutExpo');
+
+            return false;
+        });
+    };
+
 </script>
 
 </body>
