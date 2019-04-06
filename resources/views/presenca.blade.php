@@ -70,9 +70,11 @@
                         <div class="display-tc animate-box" data-animate-effect="fadeIn">
                             <h1>Confirme sua presença</h1>
                             <h2>Ela é muito importante para nós.</h2>
-                            <div class="simply-countdown simply-countdown-one"></div>
-                            <div class="js-descer">
-                                <a href="#" class="js-descer"><i class="icon-arrow-down"></i></a>
+                            <div class="simply-countdown simply-countdown-one">
+                                <div class="simply-section simply-seconds-section" style="
+    display: block;
+    margin: auto;
+"><div><span class="simply-amount">2</span><span class="simply-word">segundos</span></div></div>
                             </div>
                         </div>
                     </div>
