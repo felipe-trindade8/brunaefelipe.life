@@ -67,7 +67,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <div class="display-t" style="height: 400px;">
-                        <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                        <div class="display-tc animate-box" data-animate-effect="fadeIn" style="height: 400px;">
                             <h1>Confirme sua presença</h1>
                             <h2>Ela é muito importante para nós.</h2>
                             <div class="simply-countdown simply-countdown-one"></div>
