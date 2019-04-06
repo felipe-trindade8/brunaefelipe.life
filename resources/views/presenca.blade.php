@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bruna e Felipe - Save the date!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico"/>
 
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
+          type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
     <!-- Animate.css -->
@@ -61,7 +66,8 @@
         </div>
     </nav>
 
-    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(theme/images/bg.jpg); background-position:center;">
+    <header id="fh5co-header" class="fh5co-cover" role="banner"
+            style="background-image:url(theme/images/bg.jpg); background-position:center;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -71,8 +77,10 @@
                             <h1>Confirme sua presença</h1>
                             <h2>Ela é muito importante para nós.</h2>
                             <div class="simply-countdown simply-countdown-one"></div>
-                            <div class="js-descer">
-                                <a href="#" class="js-descer"><i class="icon-arrow-down"></i></a>
+                            <div class="js-descer" style="">
+                                <a href="#" class="js-descer">
+                                    <i class="icon-arrow-down" style="color: #FFF !important;"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -92,19 +100,21 @@
                         e para conseguirmos acertar os mínimos detalhes,
                         precisamos que confirme sua presença.
                     </p>
-                    <br />
+                    <br/>
                     <form method="POST" action="{{ url('/confirmar-presenca') }}">
                         {{ csrf_field() }}
                         <div class="row form-group">
                             <div class="col-md-12 text-left">
                                 <label for="nome">Nome:</label>
-                                <input type="text" id="nome" name="nome" required="required" class="form-control" placeholder="Seu nome como está no convite">
+                                <input type="text" id="nome" name="nome" required="required" class="form-control"
+                                       placeholder="Seu nome como está no convite">
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-md-6 text-left">
                                 <label for="quantidade">Quantidade de adultos:</label>
-                                <input type="number" min="0" id="quantidade" name="quantidade" required="required" class="form-control" value="1" placeholder="Quantidade de pessoas confirmadas">
+                                <input type="number" min="0" id="quantidade" name="quantidade" required="required"
+                                       class="form-control" value="1" placeholder="Quantidade de pessoas confirmadas">
                             </div>
                             <div class="col-md-6 text-left">
                                 <label for="confirma_presenca">Presença:</label>
@@ -117,7 +127,8 @@
                         <div class="row form-group">
                             <div class="col-md-12 text-left">
                                 <label for="observacoes">Observações:</label>
-                                <textarea name="observacoes" id="observacoes" cols="30" rows="10" class="form-control" placeholder="Observação..."></textarea>
+                                <textarea name="observacoes" id="observacoes" cols="30" rows="10" class="form-control"
+                                          placeholder="Observação..."></textarea>
                             </div>
                         </div>
                         <button type="submit" id="btn-enviar" class="btn btn-primary">Enviar :D</button>
@@ -133,7 +144,9 @@
             <div class="row copyright">
                 <div class="col-md-12 text-center">
                     <p>
-                        <small class="block">Feito com <i class="icon-heart2" style="color: #f14e95;"></i> por Bruna & Felipe</small>
+                        <small class="block">Feito com <i class="icon-heart2" style="color: #f14e95;"></i> por Bruna &
+                            Felipe
+                        </small>
                     </p>
                 </div>
             </div>
@@ -190,7 +203,7 @@
         enableUtc: false
     });
 
-    $('.js-descer').on('click', function(event){
+    $('.js-descer').on('click', function (event) {
 
         event.preventDefault();
 

@@ -1954,3 +1954,12 @@ form label {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
+
+.js-descer {
+  margin: auto;
+  display: block;
+  background-color: #cf487f;
+  color: #FFF !important;
+  width: 60px;
+  font-size: 30px;
+}
