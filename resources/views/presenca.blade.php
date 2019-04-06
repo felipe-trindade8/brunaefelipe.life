@@ -61,7 +61,7 @@
         </div>
     </nav>
 
-    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(theme/images/bg.jpg); background-position:center;">
+    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(theme/images/bg.jpg); background-position:center; max-height: 500px;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
