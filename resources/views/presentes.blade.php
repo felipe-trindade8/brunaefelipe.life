@@ -92,6 +92,7 @@
                         de presentes abaixo. Nela há itens para completar o nosso lar e também experiências
                         para a nossa lua de mel.
                     </p>
+                    <p style="font-weight: bold;">*Todos os presentes serão convertidos em créditos*</p>
                     <form id="form-filter" method="get">
                         <div class="row form-group">
                             <div class="col-md-6 text-left">
