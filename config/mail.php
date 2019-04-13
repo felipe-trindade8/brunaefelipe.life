@@ -120,4 +120,9 @@ return [
         ],
     ],
 
+    'mailgun' => [
+        'domain' => 'brunaefelipe.life',
+        'secret' => 'f9aa6fae5fe03cc9adb1b75a6a28062b-6140bac2-5018d2d',
+    ],
+
 ];

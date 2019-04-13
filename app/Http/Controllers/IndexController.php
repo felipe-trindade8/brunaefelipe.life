@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\ListaPresenca;
+use App\Mail\SendMail;
 use App\Presente;
 use App\Produto;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Recado;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 use laravel\pagseguro\Platform\Laravel5\PagSeguro;
@@ -33,8 +35,21 @@ class IndexController extends Controller
         $recado->recado = $request->mensagem;
         $recado = $recado->save();
 
-        if ($recado) $retorno = "Logo mais seu recado aparecerá em nosso site. Muito obrigado, sua mensagem é muito importante para nós!";
-        else $retorno = "Infelizmente algo deu errado! Entre em contato conosco via telefone (17) 9 8174-5101 ou (17) 9 8158-3922 e conte-nos o que aconteceu";
+        if ($recado) {
+            $retorno = "Logo mais seu recado aparecerá em nosso site. Muito obrigado, sua mensagem é muito importante para nós!";
+            Mail::to('felipe.trindade8@outlook.com')
+                ->cc('bruna13_rp@hotmail.com')
+                ->cc('felipe@ogestor.com.br')
+                ->send(new SendMail('Novo recado no site brunaefelipe.life', 'Um novo recado foi cadastrado. Acesse o painel para aceitar.Dados: ' . json_encode($request->all())));
+        }
+        else {
+            $retorno = "Infelizmente algo deu errado! Entre em contato conosco via telefone (17) 9 8174-5101 ou (17) 9 8158-3922 e conte-nos o que aconteceu";
+            Mail::to('felipe.trindade8@outlook.com')
+                ->cc('bruna13_rp@hotmail.com')
+                ->cc('felipe@ogestor.com.br')
+                ->send(new SendMail('Erro no site brunaefelipe.life', 'Foi tentado um novo recado, porém, algo deu errado. Dados: ' . json_encode($request->all())));
+        }
+
         return redirect('enviado')->with('retorno', $retorno);
     }
 
@@ -61,8 +76,20 @@ class IndexController extends Controller
         $presenca->observacoes = $request->observacoes;
         $presenca = $presenca->save();
 
-        if ($presenca) $retorno = "Muito obrigado, sua informação vai nos ajudar a deixar a nossa festa ainda mais especial.";
-        else $retorno = "Algo deu errado! Entre em contato conosco via telefone (17) 9 8174-5101 ou (17) 9 8158-3922 e conte-nos o que aconteceu";
+        if ($presenca) {
+            $retorno = "Muito obrigado, sua informação vai nos ajudar a deixar a nossa festa ainda mais especial.";
+            Mail::to('felipe.trindade8@outlook.com')
+                ->cc('bruna13_rp@hotmail.com')
+                ->cc('felipe@ogestor.com.br')
+                ->send(new SendMail('Nova confirmação de presença no site brunaefelipe.life', 'Uma nova confirmação de presença foi inserida. Acesse o painel para verificar. Dados: ' . json_encode($request->all())));
+        }
+        else {
+            $retorno = "Algo deu errado! Entre em contato conosco via telefone (17) 9 8174-5101 ou (17) 9 8158-3922 e conte-nos o que aconteceu";
+            Mail::to('felipe.trindade8@outlook.com')
+                ->cc('bruna13_rp@hotmail.com')
+                ->cc('felipe@ogestor.com.br')
+                ->send(new SendMail('Erro em tentativa de confirmação de presença brunaefelipe.life', 'Uma nova confirmação de presença deu erro. Dados: ' . json_encode($request->all())));
+        }
         return redirect('enviado')->with('retorno', $retorno);
     }
 
@@ -148,6 +175,12 @@ class IndexController extends Controller
             $presente->status = 2;
             $presente->save();
         }
+
+        Mail::to('felipe.trindade8@outlook.com')
+            ->cc('bruna13_rp@hotmail.com')
+            ->cc('felipe@ogestor.com.br')
+            ->send(new SendMail('Erro em tentativa de compra de presente brunaefelipe.life', 'Um novo presente deu erro. Dados: ' . json_encode($request->all())));
+
         return redirect('enviado');
     }
 
@@ -157,6 +190,15 @@ class IndexController extends Controller
         if(isset($request->transaction_id)) {
             $retorno['titulo'] = "Compra realizada com sucesso!";
             $retorno['mensagem'] = "Ficamos muito felizes em receber o seu presente!";
+            Mail::to('felipe.trindade8@outlook.com')
+                ->cc('bruna13_rp@hotmail.com')
+                ->cc('felipe@ogestor.com.br')
+                ->send(new SendMail('Novo presente comprado no site brunaefelipe.life', 'Um novo presente foi comprado. Acesse o painel para verificar. Dados: ' . json_encode($request->all())));
+        } else {
+            Mail::to('felipe.trindade8@outlook.com')
+                ->cc('bruna13_rp@hotmail.com')
+                ->cc('felipe@ogestor.com.br')
+                ->send(new SendMail('Erro em tentativa de compra de presente brunaefelipe.life', 'Um novo presente deu erro. Dados: ' . json_encode($request->all())));
         }
 
         return view ('enviado', compact('retorno'));
