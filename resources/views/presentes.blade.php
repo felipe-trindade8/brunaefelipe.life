@@ -310,6 +310,10 @@
         return false;
     });
 
+    $('form').on('submit', function (event) {
+        event.preventDefault();
+    });
+
 </script>
 
 </body>
