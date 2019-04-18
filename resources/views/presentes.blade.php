@@ -312,6 +312,15 @@
 
     $('form').on('submit', function (event) {
         event.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            dataType: 'json',
+            success: function (response) {
+                console.log(response);
+            }
+        });
     });
 
 </script>

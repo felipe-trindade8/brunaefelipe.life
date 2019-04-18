@@ -169,7 +169,7 @@ class IndexController extends Controller
             $produto->status = 2;
             $produto->save();
             if ($information && $information->getLink()) {
-                return Redirect::to($information->getLink());
+                return json_encode(['link' => $information->getLink(), 'status' => 1]);
             }
         } catch (\Exception $e) {
             $presente->status = 2;
@@ -181,7 +181,7 @@ class IndexController extends Controller
             ->cc('felipe@ogestor.com.br')
             ->send(new SendMail('Erro em tentativa de compra de presente brunaefelipe.life', 'Um novo presente deu erro. Dados: ' . json_encode($request->all())));
 
-        return redirect('enviado');
+        return json_encode(['link' => '', 'status' => 0]);
     }
 
     public function finalizado(Request $request) {
