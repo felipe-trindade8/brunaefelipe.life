@@ -109,11 +109,11 @@ class IndexController extends Controller
     }
 
     public function pagamento(Request $request) {
-
+        dd($request->all());
         Mail::to('felipe.trindade8@outlook.com')
             ->cc('bruna13_rp@hotmail.com')
             ->cc('felipe@ogestor.com.br')
-            ->send(new SendMail('Erro em tentativa de compra de presente brunaefelipe.life', 'Um novo presente deu erro. Dados: ' . json_encode($request->all())));
+            ->send(new SendMail('Erro em tentativa de compra de presente brunaefelipe.life', 'Um novo presente deu erro. Dados: ' . json_encode()));
 die();
         $presente = new Presente();
 
