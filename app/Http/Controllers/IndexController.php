@@ -109,11 +109,14 @@ class IndexController extends Controller
     }
 
     public function pagamento(Request $request) {
-
-        Mail::to('felipe.trindade8@outlook.com')
-            ->cc('bruna13_rp@hotmail.com')
-            ->cc('felipe@ogestor.com.br')
-            ->send(new SendMail('Erro em tentativa de compra de presente brunaefelipe.life', ''));
+        try {
+            Mail::to('felipe.trindade8@outlook.com')
+                ->cc('bruna13_rp@hotmail.com')
+                ->cc('felipe@ogestor.com.br')
+                ->send(new SendMail('Erro em tentativa de compra de presente brunaefelipe.life', ''));
+        } catch (\Exception $e) {
+            echo $e->getMessage();
+        }
 die();
         $presente = new Presente();
 
