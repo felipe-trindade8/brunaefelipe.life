@@ -111,7 +111,7 @@ class IndexController extends Controller
     public function pagamento(Request $request) {
 
         $mensagem = 'Um novo presente deu erro. Dados: ' . json_encode($request->except('_token'));
-        dd($mensagem);
+
         Mail::to('felipe.trindade8@outlook.com')
             ->cc('bruna13_rp@hotmail.com')
             ->cc('felipe@ogestor.com.br')
