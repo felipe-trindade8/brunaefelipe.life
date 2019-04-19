@@ -313,7 +313,6 @@
 
     $('form').on('submit', function (event) {
         event.preventDefault();
-        console.log("OI");
         $('.loader2').show();
         $.ajax({
             type: "POST",
@@ -326,10 +325,9 @@
                 } else {
                     location.href = response.link;
                 }
+                $('.loader2').hide();
             }
         });
-        console.log("OI2");
-        $('.loader2').hide();
     });
 
 </script>
