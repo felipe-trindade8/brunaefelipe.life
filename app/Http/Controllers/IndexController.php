@@ -110,7 +110,7 @@ class IndexController extends Controller
 
     public function pagamento(Request $request) {
 
-        $mensagem = /*utf8_decode(*/'Um novo presente deu erro. Dados:';
+        $mensagem = utf8_decode('Um novo presente deu erro. Dados:');
                     /* <b>ID:</b>' . $request['id'] . '<br />
                      <b>Nome:</b>' . $request['nome'] . '<br />
                      <b>Email:</b>' . $request['email'] . '<br />
