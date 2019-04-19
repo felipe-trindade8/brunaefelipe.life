@@ -313,6 +313,7 @@
 
     $('form').on('submit', function (event) {
         event.preventDefault();
+        $('.loader2').show();
         $.ajax({
             type: "POST",
             url: $(this).attr('action'),
@@ -326,6 +327,7 @@
                 }
             }
         });
+        $('.loader2').hide();
     });
 
 </script>
