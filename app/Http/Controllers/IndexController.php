@@ -110,8 +110,15 @@ class IndexController extends Controller
 
     public function pagamento(Request $request) {
 
-        $mensagem = 'Um novo presente deu erro. Dados: ' . json_encode($request->except('_token'));
-dd($mensagem);
+        $mensagem = 'Um novo presente deu erro. Dados: 
+                     <b>ID:</b>' . $request['id'] . '<br />
+                     <b>Nome:</b>' . $request['nome'] . '<br />
+                     <b>Email:</b>' . $request['email'] . '<br />
+                     <b>Telefone:</b>' . $request['telefone'] . '<br />
+                     <b>CPF:</b>' . $request['cpf'] . '<br />
+                     <b>Nascimento:</b>' . $request['nascimento'] . '<br />
+                     <b>Mensagem:</b>' . $request['mensagem'];
+
         Mail::to('felipe.trindade8@outlook.com')
             ->cc('bruna13_rp@hotmail.com')
             ->cc('felipe@ogestor.com.br')
