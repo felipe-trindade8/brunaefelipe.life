@@ -41,6 +41,7 @@
 <body>
 
 <div class="fh5co-loader"></div>
+<div class="fh5co-loader loader2" style="background-color: rgba(0,0,0,0.2);"></div>
 
 <div id="page">
     <nav class="fh5co-nav" role="navigation">
@@ -318,7 +319,11 @@
             data: $(this).serialize(),
             dataType: 'json',
             success: function (response) {
-                console.log(response);
+                if (!response.status) {
+                    alert("Algo deu errado. Verifique seus dados e tente novamente.");
+                } else {
+                    location.href = response.link;
+                }
             }
         });
     });
