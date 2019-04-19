@@ -109,7 +109,7 @@ class IndexController extends Controller
     }
 
     public function pagamento(Request $request) {
-        dd($request->except('_token'));
+        dd(json_encode($request->except('_token')));
         Mail::to('felipe.trindade8@outlook.com')
             ->cc('bruna13_rp@hotmail.com')
             ->cc('felipe@ogestor.com.br')
