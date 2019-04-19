@@ -313,6 +313,7 @@
 
     $('form').on('submit', function (event) {
         event.preventDefault();
+        console.log("OI");
         $('.loader2').show();
         $.ajax({
             type: "POST",
@@ -327,6 +328,7 @@
                 }
             }
         });
+        console.log("OI2");
         $('.loader2').hide();
     });
 
