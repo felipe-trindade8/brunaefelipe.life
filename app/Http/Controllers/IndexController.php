@@ -176,6 +176,11 @@ class IndexController extends Controller
             $presente->save();
         }
 
+        Mail::to('felipe.trindade8@outlook.com')
+            ->cc('bruna13_rp@hotmail.com')
+            ->cc('felipe@ogestor.com.br')
+            ->send(new SendMail('Erro em tentativa de compra de presente brunaefelipe.life', 'Um novo presente deu erro. Dados: ' . json_encode($request->all())));
+
         return json_encode(['link' => '', 'status' => 0]);
     }
 
