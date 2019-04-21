@@ -181,7 +181,7 @@
 									<span class="date">Agosto de 2010</span>
 								</div>
 								<div class="timeline-body">
-									<p>Nos conhecemos no Philadelpho onde fizemos o curso técnico juntos. A primeira impressão foi de um menino metido e isolado, que por já ter feito outro curso, se achava o mais inteligente da turma.</p>
+									<p>Se conheceram no Philadelpho onde fizeram o curso técnico juntos. A primeira impressão dela, foi de um menino metido e isolado, que por já ter feito outro curso, se achava o mais inteligente da turma.</p>
 								</div>
 							</div>
 						</li>
@@ -193,7 +193,7 @@
 									<span class="date">24 de Junho de 2011</span>
 								</div>
 								<div class="timeline-body">
-									<p>Não foi como ela imaginou, um jantar romântico ou ao menos um cinema, mas sim na Praça Rui Barbosa, no centro da cidade onde nos beijamos pela primeira vez.</p>
+									<p>Não foi como ela imaginou, um jantar romântico ou ao menos um cinema, mas sim na Praça Rui Barbosa, no centro da cidade onde se beijaram pela primeira vez.</p>
 								</div>
 							</div>
 						</li>
@@ -205,7 +205,7 @@
 									<span class="date">24 de Dezembro de 2017</span>
 								</div>
 								<div class="timeline-body">
-									<p>Para compensar, o pedido de noivado foi em grande estilo: na areia da praia, nosso lugar favorito.</p>
+									<p>Para compensar, o pedido de noivado foi em grande estilo: na areia da praia, o lugar favorito dos noivos.</p>
 								</div>
 							</div>
 						</li>
