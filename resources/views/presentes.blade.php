@@ -94,7 +94,7 @@
                         para a nossa lua de mel.
                     </p>
                     <p style="font-weight: bold;">*Todos os presentes serão convertidos em créditos*</p>
-                    <form id="form-filter" method="get">
+                    <form action="//brunaefelipe.life/lista-presentes" id="form-filter" method="get">
                         <div class="row form-group">
                             <div class="col-md-6 text-left">
                                 <label for="categoria">Categoria</label>
