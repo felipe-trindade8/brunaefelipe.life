@@ -119,6 +119,7 @@
                                 </select>
                             </div>
                         </div>
+                        <button id="submit_button" type="submit" style="display: none;" />
                     </form>
                 </div>
             </div>
@@ -297,7 +298,7 @@
     });
 
     $('#form-filter').on('change', 'select', function (e) {
-        $('#form-filter').submit();
+        $('#submit_button').trigger('click');
     });
 
     $('.js-descer').on('click', function (event) {
