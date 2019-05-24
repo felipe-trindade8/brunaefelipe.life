@@ -136,10 +136,10 @@ class IndexController extends Controller
             ],
             'shipping' => [
                 'address' => [
-                    'postalCode' => '15046233',
-                    'street' => 'Rua Nelson Matta',
-                    'number' => '607',
-                    'district' => 'Alto das Andorinhas',
+                    'postalCode' => '15080400',
+                    'street' => 'Rua Padre Antonio da Costa Carvalho',
+                    'number' => '74',
+                    'district' => 'Quinta das Paineiras',
                     'city' => 'São José do Rio Preto',
                     'state' => 'SP',
                     'country' => 'BRA',
