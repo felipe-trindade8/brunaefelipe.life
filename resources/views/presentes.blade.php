@@ -174,7 +174,7 @@
                         <span class="modal-produto-valor"></span>
                     </div>
                     <div class="col-md-7 form-pagamento">
-                        <form method="POST" action="{{ url('/pagamento') }}">
+                        <form class="produto-form" method="POST" action="{{ url('/pagamento') }}">
                             {{ csrf_field() }}
                             <input class="modal-produto-id" type="hidden" id="id" name="id">
                             <div class="row form-group">
@@ -312,7 +312,7 @@
         return false;
     });
 
-    $('form').on('submit', function (event) {
+    $('.produto-form').on('submit', function (event) {
         event.preventDefault();
         $('.loader2').show();
         $.ajax({
