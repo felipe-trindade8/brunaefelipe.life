@@ -390,7 +390,7 @@
 	<script src="theme/js/main.js"></script>
 
 	<script>
-    var d = new Date('2019-06-24 19:45:00');
+    var d = new Date('2019-06-25 19:45:00');
 
     // default example
     simplyCountdown('.simply-countdown-one', {
